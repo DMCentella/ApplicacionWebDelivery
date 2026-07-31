@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Delivery.Dominio.Entidad/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Delivery.Dominio.Entidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Delivery.Dominio.Entidad.dll": {}
+        }
+      },
+      "Delivery.Dominio.Repositorio/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Delivery.Dominio.Entidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Delivery.Dominio.Repositorio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Delivery.Dominio.Repositorio.dll": {}
+        }
+      },
+      "Delivery.Infraestructura.Datos/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Delivery.Dominio.Entidad": "1.0.0",
+          "Delivery.Dominio.Repositorio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Delivery.Infraestructura.Datos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Delivery.Infraestructura.Datos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Delivery.Dominio.Entidad/1.0.0": {
+      "type": "project",
+      "path": "../Delivery.Dominio.Entidad/Delivery.Dominio.Entidad.csproj",
+      "msbuildProject": "../Delivery.Dominio.Entidad/Delivery.Dominio.Entidad.csproj"
+    },
+    "Delivery.Dominio.Repositorio/1.0.0": {
+      "type": "project",
+      "path": "../Delivery.Dominio.Repositorio/Delivery.Dominio.Repositorio.csproj",
+      "msbuildProject": "../Delivery.Dominio.Repositorio/Delivery.Dominio.Repositorio.csproj"
+    },
+    "Delivery.Infraestructura.Datos/1.0.0": {
+      "type": "project",
+      "path": "../Delivery.Infraestructura.Datos/Delivery.Infraestructura.Datos.csproj",
+      "msbuildProject": "../Delivery.Infraestructura.Datos/Delivery.Infraestructura.Datos.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Delivery.Dominio.Entidad >= 1.0.0",
+      "Delivery.Dominio.Repositorio >= 1.0.0",
+      "Delivery.Infraestructura.Datos >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tassa\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\ApplicacionWebDelivery\\ApplicacionWebDelivery.csproj",
+      "projectName": "ApplicacionWebDelivery",
+      "projectPath": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\ApplicacionWebDelivery\\ApplicacionWebDelivery.csproj",
+      "packagesPath": "C:\\Users\\tassa\\.nuget\\packages\\",
+      "outputPath": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\ApplicacionWebDelivery\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\tassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Dominio.Entidad\\Delivery.Dominio.Entidad.csproj": {
+              "projectPath": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Dominio.Entidad\\Delivery.Dominio.Entidad.csproj"
+            },
+            "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Dominio.Repositorio\\Delivery.Dominio.Repositorio.csproj": {
+              "projectPath": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Dominio.Repositorio\\Delivery.Dominio.Repositorio.csproj"
+            },
+            "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Infraestructura.Datos\\Delivery.Infraestructura.Datos.csproj": {
+              "projectPath": "D:\\POOII\\SERVICIOS WEB\\ApplicacionWebDelivery\\Delivery.Infraestructura.Datos\\Delivery.Infraestructura.Datos.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
